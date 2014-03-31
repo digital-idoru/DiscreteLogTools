@@ -63,8 +63,10 @@ def compareGiant (b, g, p):
     (Inv, _) = egcd(g, p);
     Inv = Inv % p;
     a = russianPeasant(m, Inv, p);
-    for i in range(0, m):       
-        Z = b*(russianPeasant(i, a, p)) % p; #This can be made better as well. 
+    Z = b; # i = 0 
+    for i in range(1, m):       
+        #Z = b*(russianPeasant(i, a, p)) % p; #This can be made better as well.
+        Z = (Z * a) % p; #Is this a better way? 
         if Z in Y:
             return i*m + Y[Z] 
     
