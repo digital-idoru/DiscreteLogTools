@@ -54,7 +54,7 @@ def babyList (g, p):
     X = dict(); #O(1) avg lookups according to python's website
     m = int(computeM(p));
     for i in range(0, m):
-        X[g**i % p] = i;
+        X[g**i % p] = i; #fix this. Mult prev. elem by g. 
     return X;
 
 def compareGiant (b, g, p):
@@ -64,7 +64,7 @@ def compareGiant (b, g, p):
     Inv = Inv % p;
     a = russianPeasant(m, Inv, p);
     for i in range(0, m):       
-        Z = b*(russianPeasant(i, a, p)) % p;
+        Z = b*(russianPeasant(i, a, p)) % p; #This can be made better as well. 
         if Z in Y:
             return i*m + Y[Z] 
     
