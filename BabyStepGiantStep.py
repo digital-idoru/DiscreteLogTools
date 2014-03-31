@@ -64,7 +64,7 @@ def compareGiant (b, g, p):
     Inv = Inv % p;
     a = russianPeasant(m, Inv, p);
     for i in range(0, m):       
-        Z = b*(russianPeasant(i, a, p)) % p; #replace with Russian Peasant. 
+        Z = b*(russianPeasant(i, a, p)) % p;
         if Z in Y:
             return i*m + Y[Z] 
     
