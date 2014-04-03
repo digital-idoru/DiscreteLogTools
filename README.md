@@ -18,4 +18,4 @@ that great care must be used when setting up such cryptopsystems, i.e, "strong"
 prime numbers must be used that resist these attacks.
 
 The Pohlig-Hellman algorithm implemented here is very fast against primes that
-are vunuralbe to such an attack, i.e. primes P such that P-1 has smooth factors.
+are vulnerable to such an attack, i.e. primes P such that P-1 has smooth factors.
