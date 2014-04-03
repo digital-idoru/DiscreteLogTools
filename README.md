@@ -1,4 +1,4 @@
-babystepgiantstep
+Discrete Logarithm Problem. 
 =================
 
 Python implementation of the some tools for solving instances of the discrete
