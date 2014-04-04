@@ -103,6 +103,7 @@ def main():
     x = Combine(Z, F);
     print "A Solution to g^x = b mod p is x = " + str(x);
     print "Verifying solution.....";
+    x = x % p;
     if pow(g, x, p) == b:
         print "Verified!";
     else:
